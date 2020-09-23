@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css?family=Just+Another+Hand');
+
+body, html {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	font-family: 'Just Another Hand', cursive;
+	overflow-X: hidden;
+	overflow-y: hidden;
+}
+
+.container {
+	margin: 0 auto;
+	margin-top: 20px;
+	position: relative;
+	width: 100%;
+	height: 0;
+	padding-bottom: 40%;
+	background: #4c4c4c;
+
+}
+
+.slide-img{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.slide-img img{
+	width: 100%;
+	height: 100%;
+}
+
+#i1, #i2, #i3, #i4{
+	display: none;
+}
+
+.nav {
+	width: 100%;
+	height: 11px;
+	bottom: 12%;
+	position: absolute;
+	text-align: center;
+	z-index: 99;
+}
+
+.dots{
+	top: -5px;
+	width: 18px;
+	height: 18px;
+	margin: 0 auto;
+	position: relative;
+	border-radius: 50%;
+	display: inline-block;
+	background: rgba(0, 0, 0,.6)
+
+}
+
+.slide-img{
+	z-index: -1;
+}
+
+#i1:checked ~ #one,
+#i2:checked ~ #two,
+#i3:checked ~ #three,
+#i4:checked ~ #four{
+	z-index: 9;
+}
+
+#i1:checked ~ .nav #dot1,
+#i2:checked ~ .nav #dot2,
+#i3:checked ~ .nav #dot3,
+#i4:checked ~ .nav #dot4{
+	background: #fff;
+}
+
+/*  Footer  */
+
+img{
+	max-width: 100%;
+}
+
+footer{
+	margin: 0 auto;
+	width: 100%;
+	clear: both;
+	display: flex;
+}
+
+.l-footer{
+	width: 40%;
+	height: 100%;	
+	float: left;
+	display: block;
+}
+
+.c-footer {
+	width: 40%;
+	height: 100%;
+	position: relative;
+	display: block;
+}
+
+.c-footer h4{
+	color: #1A6BD6;
+	font-family: 'Kanit', sans-serif;
+	font-size: 12px;
+	position: absolute;
+	left: 10px;
+	top: 15px;
+}
+
+.c-footer p{
+	color: #B8BDC2;
+	font-family: 'Kanit', sans-serif;
+	font-size: 10px;
+	position: absolute;
+	left: 10px;
+	top: 40px;
+}
+
+.r-footer{
+	width: 20%;
+	height: 100%;
+	float: left;
+	position: relative;
+}
+
+.r-footer a{
+	color: #fff;
+	background: #1E62BB;
+	text-decoration: none;
+	font-family: 'Kanit', sans-serif;
+	font-size: 12px;
+	padding: 8px 25px;
+	position: absolute;
+	top: 30px;
+	left: 15px;
+}
+
+/*  Responsive  */
+	/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	.dots:nth-child(1){
+		width: 4px;
+		height: 4px;
+
+		top: 7px;
+	}
+	.dots:nth-child(2){
+		width: 4px;
+		height: 4px;
+	
+		top: 7px;
+	}
+	.dots:nth-child(3){
+		width: 4px;
+		height: 4px;
+
+		top: 7px;
+		
+	}
+	.dots:nth-child(4){
+		width: 4px;
+		height: 4px;	
+
+		top: 7px;
+	}
+}
+
+@media only screen and (min-width: 600px) {
+	.dots:nth-child(1){
+		width: 7px;
+		height: 7px;
+
+		top: 20px;
+	}
+	.dots:nth-child(2){
+		width: 7px;
+		height: 7px;
+	
+		top: 20px;
+	}
+	.dots:nth-child(3){
+		width: 7px;
+		height: 7px;
+
+		top: 20px;
+		
+	}
+	.dots:nth-child(4){
+		width:7px;
+		height: 7px;
+
+		top: 20px;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.dots:nth-child(1){
+		width: 10px;
+		height: 10px;
+		top: 35px;
+	}
+	.dots:nth-child(2){
+		width: 10px;
+		height: 10px;
+		top: 35px;
+	}
+	.dots:nth-child(3){
+		width: 10px;
+		height: 10px;		
+		top: 35px;
+		
+	}
+	.dots:nth-child(4){
+		width: 10px;
+		height: 10px;		
+		top: 35px;
+	}
+  }
