@@ -3,15 +3,15 @@
 body, html {
 	width: 100%;
 	height: 100%;
-	margin: 0;
-	font-family: 'Just Another Hand', cursive;
+    margin: 0;
+    font-family: 'Kanit', sans-serif;
+	font-size: 18px;
 	overflow-X: hidden;
 	overflow-y: hidden;
 }
 
 .container {
 	margin: 0 auto;
-	margin-top: 20px;
 	position: relative;
 	width: 100%;
 	height: 0;
@@ -89,53 +89,31 @@ footer{
 
 .l-footer{
 	width: 40%;
-	height: 100%;	
 	float: left;
 	display: block;
 }
 
-.c-footer {
-	width: 40%;
-	height: 100%;
-	position: relative;
-	display: block;
+.r-footer {
+    width: 100%;
+}
+.text{
+    color: #1E62BB;
 }
 
-.c-footer h4{
-	color: #1A6BD6;
-	font-family: 'Kanit', sans-serif;
-	font-size: 12px;
-	position: absolute;
-	left: 10px;
-	top: 15px;
+.text2{
+    color: #B8BDC2;
 }
 
-.c-footer p{
-	color: #B8BDC2;
-	font-family: 'Kanit', sans-serif;
-	font-size: 10px;
-	position: absolute;
-	left: 10px;
-	top: 40px;
-}
-
-.r-footer{
-	width: 20%;
-	height: 100%;
-	float: left;
-	position: relative;
-}
 
 .r-footer a{
-	color: #fff;
+    color: #fff;
 	background: #1E62BB;
 	text-decoration: none;
-	font-family: 'Kanit', sans-serif;
-	font-size: 12px;
-	padding: 8px 25px;
-	position: absolute;
-	top: 30px;
-	left: 15px;
+    font-family: 'Kanit', sans-serif;
+    position: relative;
+    padding: 8px 25px;
+    top: 45px;
+    left: 50px;
 }
 
 /*  Responsive  */
@@ -165,35 +143,86 @@ footer{
 		height: 4px;	
 
 		top: 7px;
-	}
+    }
+
+    footer{
+        width: 100%;
+        height: 50px;
+    }
+
+    span{
+        font-size: 4px;
+        position: relative;
+        top: 2px;
+        left: 30px;
+    }
+    .text{
+        position: relative
+    }
+    .text2{
+        position: relative;
+        top: -19px;
+    }
+
+    .r-footer a{
+        font-size: 4px;
+        color: #fff;
+        background: #1E62BB;
+        text-decoration: none;
+        font-family: 'Kanit', sans-serif;
+        position: relative;
+        padding: 1px 2.5px;
+        top: -22px;
+        left: 70px;
+    }
 }
 
 @media only screen and (min-width: 600px) {
 	.dots:nth-child(1){
 		width: 7px;
 		height: 7px;
-
 		top: 20px;
 	}
 	.dots:nth-child(2){
 		width: 7px;
 		height: 7px;
-	
 		top: 20px;
 	}
 	.dots:nth-child(3){
 		width: 7px;
 		height: 7px;
-
 		top: 20px;
 		
 	}
 	.dots:nth-child(4){
 		width:7px;
 		height: 7px;
-
 		top: 20px;
-	}
+    }
+    span{
+        font-size: 9px;
+        position: relative;
+        top: 8px;
+        left: 35px;
+    }
+    .text{
+        position: relative
+    }
+    .text2{
+        position: relative;
+        top: -7px;
+    }
+    .r-footer a{
+        font-size: 8px;
+        color: #fff;
+        background: #1E62BB;
+        text-decoration: none;
+        font-family: 'Kanit', sans-serif;
+        position: relative;
+        padding: 4px 8px;
+        top: -14px;
+        left: 110px;
+    }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -217,5 +246,31 @@ footer{
 		width: 10px;
 		height: 10px;		
 		top: 35px;
-	}
+    }
+    span{
+        font-size: 16px;
+        position: relative;
+        top: 30px;
+        left: 45px;
+    }
+    .text{
+        position: relative
+    }
+    .text2{
+        font-size: 15px;
+        position: relative;
+        top: 23px;
+    }
+    .r-footer a{
+        font-size: 16px;
+        color: #fff;
+        background: #1E62BB;
+        text-decoration: none;
+        font-family: 'Kanit', sans-serif;
+        position: relative;
+        padding: 9px 40px;
+        top: 8px;
+        left: 220px;
+    }
   }
+  
